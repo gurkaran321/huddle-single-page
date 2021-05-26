@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsla(257, 40%, 49%);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+header {
+    padding: 25px 35px;
+}
+
+header img {
+    width: 50%;
+}
+
+main {
+    margin: 25px 2rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+article img {
+    max-width: 100%;
+}
+
+.text h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.text p {
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: block;
+    color: hsl(257, 40%, 49%);
+    margin: 0 auto;
+    padding: 15px 25vw;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: blueviolet;
+}
+
+.footer {
+    padding-top: 3rem;
+}
+
+.footer nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+ul li {
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+@media only screen and (min-width:900px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin: 0 5vw 0 2.5vw;
+        grid-column-gap: 1rem;
+    }
+    header {
+        padding: 5vh;
+    }
+    header img {
+        width: 20%;
+    }
+    .text {
+        padding: 5vh 10px;
+    }
+    .text h2 {
+        font-size: 2rem;
+    }
+    .text p {
+        text-align: left;
+        line-height: 1.8;
+        font-size: 0.8rem;
+    }
+    .btn {
+        margin: 0;
+        padding: 15px 5vw;
+    }
+    .footer {
+        grid-column: 2/3;
+        justify-self: flex-end;
+    }
+}
+
+)
